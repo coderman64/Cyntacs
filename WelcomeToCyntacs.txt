@@ -1,0 +1,16 @@
+WELCOME TO CYNTACS
+
+Cyntacs is a python-based code editor that offers various basic functions, such
+as line numbering and (coming soon) syntax highlighting.
+
+Cyntacs aims to be:
+
+* a nice way to write code
+* an easy-to-use text editor
+
+Cyntacs does not aim to be:
+
+* a full-fledged IDE
+* a replacement for more advanced code editors such as visual studio code
+
+Please report any bugs in the Cyntacs github repository
