@@ -1,4 +1,18 @@
+[.py, .pyw]:
+>orange: False, None, True, and, as, assert, break, class, continue, def, del, elif, else, except, finally, for, from, global, if, import, in, is, lambda, nonlocal, not, or, pass, raise, return, try, while, with, yield
+>purple: open, str, len, list, print, FileNotFoundError, tuple, int, range
+>blue: def -*-(, class-*-(, class-*-:
+>red: #+*+\n
+>green: "+*+", '+*+', """+*+"""
 
-keyword: False, None, True, and, as, assert, break, class, continue, def, del, elif, else, except, finally, for, from, global, if, import, in, is, lambda, nonlocal, not, or, pass, raise, return, try, while, with, yield
-builtin: open, str, len, list, print, FileNotFoundError, tuple
+[.js]:
+>blue: var, if, for, else, switch, case, break, function, this, true, false,
+>green: "+*+", //+*+\n, /*+*+*/
+
+[.html, .htm]:
+>blue: <+*+>
+
+[.txt]:
+>black: "+*+"
+
 
