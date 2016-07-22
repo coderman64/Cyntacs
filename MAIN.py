@@ -6,6 +6,12 @@ from SyntaxHighlighting import *
 import sys
 import time
 
+currentPath = os.path.realpath(sys.argv[0]);
+if currentPath.rfind("/") != -1:
+    currentPath = currentPath[:currentPath.rfind("/")]
+else:
+    currentPath = currentPath[:currentPath.rfind("\\")]
+
 # not quite sure what this does yet...
 fileName = "New"
 loadText = ""
@@ -13,7 +19,7 @@ load2 = False
 
 class App(Tk):
     def __init__(self):
-        os.chdir(str(os.path.realpath(sys.argv[0])).replace("MAIN.exe","").replace("MAIN.py",""))
+        os.chdir(currentPath)
         Tk.__init__(self)
 
         #basic variables
@@ -48,7 +54,7 @@ class App(Tk):
             self.saveFile = sys.argv[len(sys.argv)-1]
             self.title(string = "Cyntacs - "+str(self.saveFile))
             file = open(sys.argv[len(sys.argv)-1])
-            os.chdir(str(os.path.realpath(sys.argv[0])).replace("MAIN.exe","").replace("MAIN.py",""))
+            os.chdir(currentPath)
             self.textArea.delete("0.0",END)
             self.textArea.insert("0.0",file.read())
             self.current = self.textArea.get("0.0",END)

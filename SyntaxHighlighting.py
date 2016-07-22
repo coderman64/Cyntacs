@@ -6,7 +6,12 @@ import os.path
 import sys
 
 defLists = {}
-os.chdir(os.path.realpath(sys.argv[0]).replace("MAIN.exe","").replace("MAIN.py",""))
+currentPath = os.path.realpath(sys.argv[0]);
+if currentPath.rfind("/") != -1:
+    currentPath = currentPath[:currentPath.rfind("/")]
+else:
+    currentPath = currentPath[:currentPath.rfind("\\")]
+os.chdir(currentPath);
 
 syntaxDefinitionFile = open("SyntaxDefs.txt")
 synDef = syntaxDefinitionFile.read()
@@ -143,4 +148,5 @@ class syntaxHighlighter:
             #print(pos)
             start = pos + "+1c"""
               
+
 
