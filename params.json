@@ -1,0 +1,6 @@
+{
+  "name": "Cyntacs",
+  "tagline": "A fairly simple code editor written in python",
+  "body": "# Welcome to the Cyntacs Main Page!\r\n\r\n\r\n\r\n## What is it?\r\nCyntacs is a small, lightweight code editor written in python.\r\n\r\n## What can it do?\r\nCyntacs can:\r\n* open text-based files\r\n* highlight syntax based on a custom-defined \"SyntaxDefs.txt\" file, where you can specify what you want to highlight, and what color you want it to be\r\n* undo and redo\r\n* open files through the \"open with...\" command in windows\r\n\r\n## where can I download a .exe file?\r\nyou can download a .exe from [here](https://github.com/coderman64/Cyntacs/raw/master/dist/Cyntacs.zip).\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
